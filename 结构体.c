@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /*
-struct -- ½á¹¹Ìå
-.  -- ½á¹¹Ìå±äÁ¿.³ÉÔ±
--> --Ö¸Õë±äÁ¿ -> ³ÉÔ±
+struct -- ç»“æ„ä½“
+.  -- ç»“æ„ä½“å˜é‡
+-> --æŒ‡é’ˆå˜é‡ 
 
 */
 struct Person
@@ -16,17 +16,21 @@ struct Person
 
 int main() {
 
-	struct Person a = { "ÁÎÏà»Ô", 36 ,"ÄĞ" };
-	struct Person b = { "¸ÊÁ¢·¼", 36 ,"Å®" };
-	struct Person c = { "ÁÎÓî³½", 10 ,"ÄĞ" };
+	struct Person a = { "å»–ç›¸è¾‰", 36 ,"ç”·" };
+	struct Person b = { "ç”˜ç«‹èŠ³", 36 ,"å¥³" };
+	struct Person c = { "å»–å®‡è¾°", 10 ,"ç”·" };
 
-	printf("Ëû£¨Ëı£©µÄÃû×Ö£º%s\n", a.name);
-	printf("Ëû£¨Ëı£©µÄÄêÁä£º%d\n", a.age);
-	printf("Ëû£¨Ëı£©µÄĞÔ±ğ£º%s\n", a.gender);
+	printf("ä»–ï¼ˆå¥¹ï¼‰çš„åå­—ï¼š%s\n", a.name);
+	printf("ä»–ï¼ˆå¥¹ï¼‰çš„å¹´é¾„ï¼š%d\n", a.age);
+	printf("ä»–ï¼ˆå¥¹ï¼‰çš„æ€§åˆ«ï¼š%s\n", a.gender);
 
-	//Í¨¹ı&½«aµÄÄÚ´æµØÖ·£¬¸³¸ø½á¹¹ÌåÖ¸Õë±äÁ¿pa
+	//é€šè¿‡&å°†açš„å†…å­˜åœ°å€ï¼Œèµ‹ç»™ç»“æ„ä½“æŒ‡é’ˆå˜é‡pa
 	struct Person* pa = &a;
-	//Í¨¹ı½á¹¹ÌåÖ¸Õë±äÁ¿pa£¬¶ÁÈ¡aµÄnameÊôĞÔÖµ
-	printf("%s\n", pa->name);
+
+	//é€šè¿‡string.håº“å‡½æ•°ï¼Œæ”¹å˜æŒ‡é’ˆpaçš„nameå±æ€§
+	strcpy(pa->name, "å¤æ´›ç‰¹");
+
+	//è¯»å–açš„nameæ–°å±æ€§å€¼
+	printf("%s\n", a.name);
 	return 0;
 }
