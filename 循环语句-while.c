@@ -7,22 +7,22 @@ int main()
 	int ret = 0;
 	int ch = 0;
 	char password[20] = { 0 };
-	printf("ÇëÊäÈëÃÜÂë£º");
+	printf("è¯·è¾“å…¥å¯†ç ï¼š");
 	scanf("%s", password);
 
-	//ÀûÓÃwhileÑ­»·£¬È¥³ı¶àÓà¿Õ¸ñ
+	//åˆ©ç”¨whileå¾ªç¯ï¼Œå»é™¤å¤šä½™ç©ºæ ¼
 	while ((ch = getchar()) != '\n')
 	{
 		;
 	}
 
-	printf("ÇëÈ·ÈÏ£¨Y/N)£º");
+	printf("è¯·ç¡®è®¤ï¼ˆY/N)ï¼š");
 	ret = getchar();
 
 	if (ret == 'Y')
-		printf("È·ÈÏ³É¹¦");
+		printf("ç¡®è®¤æˆåŠŸ");
 	else
-		printf("·ÅÆúÈ·ÈÏ");
+		printf("æ”¾å¼ƒç¡®è®¤");
 	
 	return 0;
 }
