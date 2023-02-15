@@ -6,7 +6,7 @@ int main()
 {
 	int i = 0;
 
-	//while循环格式
+	//while寰幆鏍煎紡
 	while (i < 10)
 	{
 		i++;
@@ -14,7 +14,7 @@ int main()
 
 	}
 
-	//for循环格式
+	//for寰幆鏍煎紡
 	for ( i = 0; i < 10; i++)
 	{
 		printf(" %d", i);
