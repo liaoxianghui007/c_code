@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 
-//函数的传址调用
+//函数的传值调用
 int Max(int x,int y)
 {
 	int z = x * y;
